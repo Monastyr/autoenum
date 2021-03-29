@@ -42,7 +42,7 @@ services:
     image: cve_search
     build:
       context: ./cve-search
-      dockerfile: /etc/ansible/roles/ansible-autoenum/templates/cve-search/docker/images/cve_search/dockerfile-cve_search
+      dockerfile: /etc/ansible/roles/autoenum/templates/cve-search/docker/images/cve_search/dockerfile-cve_search
       args:
         - REPO=cve-search/cve-search
         - BRANCH=master
@@ -63,7 +63,7 @@ services:
     restart: always
     build:
       context: ./cve-search
-      dockerfile: /etc/ansible/roles/docker/templates/cve-search/docker/images/redis/dockerfile-redis
+      dockerfile: /etc/ansible/roles/autoenum/templates/cve-search/docker/images/redis/dockerfile-redis
     volumes:
       - "./.cve_search_data/cve_search_redis:/data"
     expose:
@@ -76,7 +76,7 @@ services:
     restart: always
     build:
       context: ./cve-search
-      dockerfile: /etc/ansible/roles/docker/templates/cve-search/docker/images/mongodb/dockerfile-mongo
+      dockerfile: /etc/ansible/roles/autoenum/templates/cve-search/docker/images/mongodb/dockerfile-mongo
     volumes:
       - "./.cve_search_data/cve_search_mongodb:/data/db"
     expose:
