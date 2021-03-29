@@ -1,4 +1,4 @@
-Role Name
+Autoenum - network scanner
 =========
 
 A brief description of the role goes here.
