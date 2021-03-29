@@ -32,4 +32,4 @@
     clone: yes
   
 - name: running docker compose
-  shell: docker-compose -f /etc/ansible/roles/docker/templates/docker-compose.yml up -d
+  shell: docker-compose -f /etc/ansible/roles/autoenum/templates/docker-compose.yml up -d
