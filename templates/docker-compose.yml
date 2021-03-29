@@ -42,7 +42,7 @@ services:
     image: cve_search
     build:
       context: ./cve-search
-      dockerfile: /etc/ansible/roles/docker/templates/cve-search/docker/images/cve_search/dockerfile-cve_search
+      dockerfile: /etc/ansible/roles/ansible-autoenum/templates/cve-search/docker/images/cve_search/dockerfile-cve_search
       args:
         - REPO=cve-search/cve-search
         - BRANCH=master
